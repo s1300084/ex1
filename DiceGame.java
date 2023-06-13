@@ -1,5 +1,11 @@
+import java.util.Scanner;
+
 public class DiceGame {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What is your name? ");
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
 
         System.out.println("Rolling dice...");
         int i1 = (int) (Math.random() * 6) + 1;
